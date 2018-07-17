@@ -1,0 +1,52 @@
+Concepts
+iterator
+generator
+closures
+decorator, @property
+
+
+sorting - sorted(d.items(), key=operator.itemgetter(1), reverse=True)
+list.sort() is in-place, sorted(list) is not in-place
+
+useful functions - enumerate, zip, dict.get, split, join
+
+collections - Counter
+
+itertools - count, chain, cycle, islice,
+functools - reduce, partial
+functools.reduce(operator.add, [1,2,3,4])
+operator - add, iadd, sub, mul, truediv, floordiv, pow, mod etc.
+
+http://jmduke.com/posts/a-gentle-introduction-to-itertools/
+http://nvie.com/posts/iterators-vs-generators/
+
+
+
+Map: It iterates over each element of a series. df[‘column1’].map(lambda x: 10+x), this will add 10 to each element of column1. df[‘column2’].map(lambda x: ‘AV’+x), this will concatenate “AV“ at the beginning of each element of column2 (column format is string).
+Apply: Applies a function along any axis of the DataFrame. df[[‘column1’,’column2’]].apply(sum), it will returns the sum of all the values of column1 and column2.
+ApplyMap: This helps to apply a function to each element of dataframe. func = lambda x: x+2 df.applymap(func), it will add 2 to each element of dataframe (all columns of dataframe must be numeric type)
+
+
+Python OOP
+Abstract classes and methods - https://www.python-course.eu/python3_abstract_classes.php
+@property - https://www.programiz.com/python-programming/property
+
+Plotting
+	Univariate
+		Numerical - Measures of location, Measures of spread, Asymmetry, Outliers, Gaps
+			Histogram
+			Dot Plot
+			Violin Plot
+			Box Plot
+			Density Plot
+		Categorical - 	Count of each category, Proportion of each category, Imbalanced categories, Mislabeled 					categories
+			Bar Plot
+			Cleveland Dot Plot
+			Lollipop Charts
+
+	Bivariate Relationships - Associations, Outliers, Clusters, Gaps, Barriers, Change points
+		Numarical vs Numerical
+			Scatter Plot
+		Numarical vs Catogorical
+			 
+
