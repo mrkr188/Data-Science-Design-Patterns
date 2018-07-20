@@ -21,6 +21,8 @@ http://jmduke.com/posts/a-gentle-introduction-to-itertools/
 http://nvie.com/posts/iterators-vs-generators/
 
 
+Multithreading - https://www.ploggingdev.com/2017/01/multiprocessing-and-multithreading-in-python-3/
+
 
 Map: It iterates over each element of a series. df[‘column1’].map(lambda x: 10+x), this will add 10 to each element of column1. df[‘column2’].map(lambda x: ‘AV’+x), this will concatenate “AV“ at the beginning of each element of column2 (column format is string).
 Apply: Applies a function along any axis of the DataFrame. df[[‘column1’,’column2’]].apply(sum), it will returns the sum of all the values of column1 and column2.
